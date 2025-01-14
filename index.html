@@ -11,6 +11,13 @@
   <!-- Favicons -->
   <!-- <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+  <link href="https://fonts.googleapis.com/css2?family=YourFontName&display=swap" rel="stylesheet">
+
+  
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=FontName:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=FontName:wght@400;700&display=swap">
+</noscript>
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -24,9 +31,13 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="assets/css/main.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="assets/css/main.css"></noscript>
+  
+  <style>
+    body { font-family: 'FontName', sans-serif; margin: 0; padding: 0; }
+    h1 { color: #333; font-size: 2rem; }
+  </style>
   
 </head>
 
@@ -478,7 +489,8 @@ I'm <span class="accent-text">Bhargav</span>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js" defer></script>
+
 </body>
 
 </html>
